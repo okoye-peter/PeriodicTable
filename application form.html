@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM STUDY</title>
+	<style type="text/css">
+	    body{
+	    	background: url("alps-background-beautiful-view-1227520.jpg");
+	    	
+	    	background-position: contain;
+	    	background-size: contain;
+	    }
+	
+		input{
+			
+			float: right;
+			width: 60%;
+		}
+		select{
+			
+			float: right;
+		}
+		div{
+			width: 45%;
+			background: black;
+			opacity:0.9;
+		    box-sizing:border-box;
+		    font-size: 14px;
+		    font-family: "times new roman";
+            padding: 3%;
+			margin-left:25%;
+		}
+		span{
+			color: white;
+		}
+		h2,p{
+			color: white;
+		}
+		h1{
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>STUDY APPLICATION</h1>
+	<form action="php.php" method="post" autocomplete="on" onsubmit="return checkForLastName();">
+	<div>
+		<center>
+		<h2>Application</h2>
+		<p>Please fill out the application form carefully</p>
+	</center>
+		<span>Name</span>
+		<input type="text" name="Name" autocomplete="on"><br><br>
+		<span>Father Name</span>
+		<input type="text" name="Father" autocomplete="on"><br><br>
+		<span>Mother</span>
+		<input type="text" name="Mother" autocomplete="on"><br><br>
+		<span>Date of Birth</span>
+		<input type="number" name="year" min="1990" style="width:19.45%;" >
+		<select style="width:19.45%;margin-right: 1%">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option>22</option>
+			<option>23</option>
+			<option>24</option>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+			<option>31</option>
+		</select>
+		<select style="width:19.45%;margin-right: 1%">
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+			<option>Apr</option>
+			<option>May</option>
+			<option>Jun</option>
+			<option>Jul</option>
+			<option>Aug</option>
+			<option>Sep</option>
+			<option>Oct</option>
+			<option>Nov</option>
+			<option>Dec</option>
+		</select><br><br>
+		<input type="text" name="day" value="Year" style="width:19.45%;margin-right: 1%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly >
+		<input type="text" name="day" value="Day" style="width:19.45%;margin-right: 1%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly >
+
+		<input type="text" name="year" style="width:19.45%;background: transparent;color: white;border: 0px solid black;z-index: 1;" value="Month" readonly><br><br>
+		<span>Gender</span>
+		<select style="width: 60.4%">
+			<option>Male</option>
+			<option>Female</option>
+		</select><br><br>
+		<span>E-Mail Address</span>
+		<input id="nameField" type="email" name="E-Mail" autocomplete="on"><br><br>
+		<span>Mobile Number</span>
+		<input type="tel" name="number" autocomplete="on"><br><br>
+		<span>Address</span>
+		<input type="text" name="Address" style="width:29.35%;" autocomplete="on">
+	    <input type="text" name="Address" style="width:29.35%;margin-right: 0.5%;" autocomplete="on"><br><br>
+	    <input type="text" name="Address" value="Street Line 2" style="width:29.35%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly>
+	    <input type="text" name="Address" value="Street Address" style="width:29.35%;margin-right: 0.5%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly "><br><br><input type="text" name="Address" style="width:29.35%;">
+	    <input type="text" name="Address" style="width:29.35%;margin-right: 0.5%;"><br><br>
+	    <input type="text" name="Address" value="State / Province" style="width:29.35%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly>
+	    <input type="text" name="Address" value="City" style="width:29.35%;margin-right: 0.5%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly><br><br>
+	    
+	    <input type="text" name="Address" style="width:29.35%;" autocomplete="on">
+	    <input type="text" name="Address" style="width:29.35%;margin-right: 0.5%;" autocomplete="on"><br><br>
+	    <input type="text" name="Address" value="Country" style="width:29.35%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly>
+	    <input type="text" name="Address" value="Postal / Zip Codde" style="width:29.35%;margin-right: 0.5%;background: transparent;color: white;border: 0px solid black;z-index: 1;" readonly><br><br>
+	    <span>Course name</span>
+	    <input type="text" name="Course"><br><br>
+	    <span>Type of Education</span>
+	    <input type="text" name="Education"><br><br>
+	    <span>Course Description</span><br><br>
+	    <textarea style="min-width: 98.5%;"></textarea><br><br>
+	    <center>
+	    <button style="background-color: #ff1a75;color: white;opacity: 1;width: 30%;clear: both;padding: 1%;">APPLY NOW</button>
+	   </center>
+</div>
+</form>
+<script>
+  function checkForLastName() {
+    var targetField = document.getElementById("nameField");
+    if (targetField.value.length === 0) {
+    alert("Please enter your E-Mail");
+    targetField.focus();
+return false;
+ }
+}
+</script>
+</body>
+</html>
